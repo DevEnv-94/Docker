@@ -3,13 +3,16 @@
 Dokcerfile
 ```Dockerfile
 
-ARG NG_VERSION
+ARG NG_VERSION #impact to FROM
+
 FROM nginx:$NG_VERSION
 
-ARG NG_VERSION # if dont repaet it would be blank env
+ARG NG_VERSION #impact to ENV
+
 ENV NG_VERSION="$NG_VERSION"
 
-ARG ARG_FILE
+ARG ARG_FILE #impact to RUN
+
 RUN touch /opt/$ARG_FILE
 
 
