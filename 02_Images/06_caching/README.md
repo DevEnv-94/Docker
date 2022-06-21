@@ -8,6 +8,8 @@ RUN apk update && apk add build-base
 
 ```bash
 
+docker build . --cache-from "ID or name"
+
 user@server:~$ sudo time docker build . -t cache:1
 Successfully built 16930fa4f26a
 Successfully tagged cache:1
