@@ -7,6 +7,8 @@ user@server:~$ git clone https://github.com/grafana/grafana.git
 
 user@server:~/grafana$ sudo docker build --target app -t grafana:app .
 
+user@server:~/grafana$ sudo docker build --target static -t grafana:static .
+
 user@server:~/grafana$ sudo docker images
 REPOSITORY   TAG              IMAGE ID       CREATED              SIZE
 grafana      static           96e0cd198f38   About a minute ago   58.6MB
