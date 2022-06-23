@@ -1,5 +1,9 @@
 
 ```bash
+user@server:~$ git clone https://gitlab.rebrainme.com/docker_users_repos/3018/dkr-14-gocalc.git
+
+user@server:~/dkr-14-gocalc$ sudo build -t gocalc:latest .
+
 user@server:~$ sudo docker login registry.rebrainme.com
 
 user@server:~/dkr-14-gocalc$ sudo docker image tag gocalc:latest registry.rebrainme.com/docker_users_repos/3018/dkr-19-gocalc/gocalc:latest
